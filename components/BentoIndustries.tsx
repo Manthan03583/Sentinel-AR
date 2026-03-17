@@ -97,7 +97,7 @@ export const BentoIndustries = () => {
               </div>
 
               {/* HUD scanlines */}
-              <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.05] pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.5)_1px,transparent_1px)] bg-[size:20px_20px]" />
+              <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.05] pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.5)_1px,transparent_1px)] bg-[background-size:20px_20px]" />
             </div>
           ))}
         </div>

@@ -50,7 +50,7 @@ export const TechSection = () => {
                    </div>
                 </div>
              </div>
-             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.2)_1px,transparent_1px)] bg-[size:30px:30px]" />
+             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.2)_1px,transparent_1px)] bg-[background-size:30px_30px]" />
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ if (typeof window !== "undefined") {
 const ValueProposition = () => {
   return (
     <section className="py-24 bg-[#050505] border-y border-white/5 relative overflow-hidden">
-       <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.5)_1px,transparent_1px)] bg-[size:30px_30px]" />
+       <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.5)_1px,transparent_1px)] bg-[background-size:30px_30px]" />
        
        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
           {[

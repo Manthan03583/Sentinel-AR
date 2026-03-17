@@ -131,7 +131,7 @@ export const SentinelKernel = () => {
           </div>
 
           {/* Background Grid Lines */}
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,176,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.03)_1px,transparent_1px)] bg-[size:40px:40px] pointer-events-none" />
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,176,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.03)_1px,transparent_1px)] bg-[background-size:40px_40px] pointer-events-none" />
         </div>
 
       </div>
