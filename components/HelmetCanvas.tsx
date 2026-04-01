@@ -53,8 +53,8 @@ const PrototypeHelmet = () => {
 
         {/* 3. Front High-Intensity Sensor Array (Photos 7/8) */}
         <group position={[0, 0.45, 1.2]}>
-          <mesh>
-            <capsuleGeometry args={[0.18, 0.9, 16, 32]} rotation={[0, 0, Math.PI / 2]} />
+          <mesh rotation={[0, 0, Math.PI / 2]}>
+            <capsuleGeometry args={[0.18, 0.9, 16, 32]} />
             <meshStandardMaterial color="#0f172a" metalness={0.9} roughness={0.1} />
           </mesh>
           {/* Central Spotlight */}
