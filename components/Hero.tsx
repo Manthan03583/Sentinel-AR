@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef, Suspense } from "react";
+import Link from "next/link";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { 
   OrbitControls, 
@@ -61,7 +62,6 @@ export const Hero = () => {
         <Canvas>
           <Suspense fallback={null}>
             <PerspectiveCamera makeDefault position={[0, 0, 6]} />
-            <Environment preset="city" />
             <LiDARCloud />
             <OrbitControls enableZoom={false} enablePan={false} />
           </Suspense>
@@ -69,42 +69,42 @@ export const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="space-y-12 order-2 lg:order-1">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="space-y-8 lg:space-y-12 order-1 lg:order-1">
             <div className="hero-text space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/5 border border-amber-500/10 rounded-sm">
                 <span className="w-1.5 h-1.5 bg-amber-500 animate-pulse" />
-                <span className="text-[9px] font-mono text-amber-500 font-black uppercase tracking-[0.3em]">Protocol: SentinelAR // Field Ready</span>
+                <span className="text-[8px] md:text-[9px] font-mono text-amber-500 font-black uppercase tracking-[0.3em]">Protocol: SentinelAR // Sovereign Intelligence</span>
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.85] text-white uppercase">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] text-white uppercase">
                 Active <br/>
                 <span className="text-amber-500 drop-shadow-[0_0_15px_rgba(255,176,0,0.3)]">Protection</span> <br/>
                 Engineered.
               </h1>
             </div>
 
-            <p className="hero-text text-lg text-gray-500 max-w-lg font-medium leading-relaxed border-l-2 border-amber-500/20 pl-6">
-              SentinelAR: A mission-critical spatial AI platform designed for the extreme high-heat and dust reality of the Indian industrial belt.
+            <p className="hero-text text-base md:text-lg text-gray-500 max-w-lg font-medium leading-relaxed border-l-2 border-amber-500/20 pl-6">
+              SentinelAR: A mission-critical spatial platform designed for the extreme high-heat and dust reality of the Indian industrial belt. Optimized for Hybrid Edge-Sync and Zero-Trust environments.
             </p>
 
-            <div className="hero-text flex flex-wrap gap-4 pt-4">
-              <button className="bg-amber-500 text-black px-12 py-5 font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-2xl shadow-amber-500/20">
+            <div className="hero-text flex flex-col sm:flex-row gap-4 pt-4">
+              <Link href="#contact" className="bg-amber-500 text-black px-8 lg:px-12 py-4 lg:py-5 font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-2xl shadow-amber-500/20 active:scale-95 text-center">
                 Initiate Technical Pilot
-              </button>
-              <button className="px-12 py-5 border border-white/10 text-white font-black uppercase tracking-widest text-xs hover:bg-white/5 transition-all">
+              </Link>
+              <button className="px-8 lg:px-12 py-4 lg:py-5 border border-white/10 text-white font-black uppercase tracking-widest text-xs hover:bg-white/5 transition-all text-center">
                 Briefing Dossier
               </button>
             </div>
 
-            <div className="hero-text grid grid-cols-3 gap-10 pt-12 border-t border-white/5 opacity-60 grayscale hover:grayscale-0 transition-all">
+            <div className="hero-text grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-10 pt-12 border-t border-white/5 opacity-60 grayscale hover:grayscale-0 transition-all">
               {[
-                { label: "Core", val: "Orin Nano", icon: Cpu },
-                { label: "Link", val: "LoRa + 5G", icon: Zap },
-                { label: "Build", val: "IP67 Alloy", icon: ShieldAlert }
+                { label: "Core", val: "Sovereign AI", icon: Cpu },
+                { label: "Link", val: "Encrypted Mesh", icon: Zap },
+                { label: "Build", val: "Industrial Alloy", icon: ShieldAlert }
               ].map((stat, i) => (
                 <div key={i} className="space-y-1">
                   <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest">{stat.label}</div>
-                  <div className="text-xs font-mono font-bold text-white uppercase flex items-center gap-2">
+                  <div className="text-[10px] md:text-xs font-mono font-bold text-white uppercase flex items-center gap-2">
                     <stat.icon className="w-3 h-3 text-amber-500" /> {stat.val}
                   </div>
                 </div>
@@ -112,19 +112,19 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className="hero-visual relative order-1 lg:order-2">
+          <div className="hero-visual relative order-2 lg:order-2 px-4 md:px-0">
              <div className="relative group overflow-hidden bg-white/[0.02] border border-white/5 p-4 rounded-3xl backdrop-blur-sm shadow-2xl">
                 <img 
                   src="/helmet3.png" 
                   alt="SentinelAR Final Production Candidate" 
-                  className="w-full h-auto drop-shadow-[0_0_50px_rgba(255,176,0,0.1)] grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-auto drop-shadow-[0_0_50px_rgba(255,176,0,0.1)] grayscale-[0.2] hover:grayscale-0 transition-all duration-700 max-w-[500px] mx-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-                <div className="absolute top-6 right-6 flex flex-col items-end gap-2">
-                   <div className="px-3 py-1 bg-amber-500 text-black text-[9px] font-black uppercase tracking-widest">SENTINEL-AR-PRO</div>
-                   <div className="px-3 py-1 bg-black/80 border border-white/10 text-amber-500 text-[9px] font-mono tracking-widest">SYNC_0.4ms</div>
+                <div className="absolute top-4 lg:top-6 right-4 lg:right-6 flex flex-col items-end gap-2">
+                   <div className="px-3 py-1 bg-amber-500 text-black text-[8px] md:text-[9px] font-black uppercase tracking-widest">SENTINEL-AR-PRO</div>
+                   <div className="px-3 py-1 bg-black/80 border border-white/10 text-amber-500 text-[8px] md:text-[9px] font-mono tracking-widest">SYNC_0.4ms</div>
                 </div>
-                <div className="absolute bottom-6 left-6 font-mono text-[8px] text-zinc-500 space-y-1">
+                <div className="absolute bottom-4 lg:bottom-6 left-4 lg:left-6 font-mono text-[7px] md:text-[8px] text-zinc-500 space-y-1">
                    <div>[SCAN_VOL_LIDAR]: 34.2m³</div>
                    <div>[TEMP_CORE]: 32.4°C (STABLE)</div>
                 </div>

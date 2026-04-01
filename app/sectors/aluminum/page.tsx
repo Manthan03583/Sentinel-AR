@@ -5,46 +5,45 @@ import Link from "next/link";
 import { 
   ArrowLeft, 
   Shield, 
-  Globe, 
-  Activity, 
   Zap, 
-  Cpu, 
+  Activity, 
   ChevronRight,
   Database,
+  Cpu,
   Layers,
-  Map
+  Wind
 } from "lucide-react";
 
 const SECTOR_DATA = {
-  title: "Mining & Resources",
-  headline: "Sub-Surface Spatial Intelligence.",
-  desc: "Navigating the extreme environments of deep-earth mining requires more than just maps—it requires real-time spatial digital twins. SentinelAR provides operators with 180° visibility through dust, smoke, and total darkness.",
-  img: "https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=2070",
+  title: "Aluminum & Smelting",
+  headline: "Precision Diagnostics for Potlines.",
+  desc: "Navigating the high-magnetic and high-current environments of aluminum potlines requires specialized interference-shielded hardware. SentinelAR delivers real-time cell diagnostics and anode tracking in the Angul Aluminum Complex.",
+  img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070",
   stats: [
-    { label: "Hazard Detection", val: "< 50ms" },
-    { label: "Depth Rating", val: "3,500m" },
-    { label: "O2 Precision", val: "99.9%" }
+    { label: "Magnetic Shielding", val: "EMC Tier 4" },
+    { label: "Cell Latency", val: "< 15ms" },
+    { label: "Unit Uptime", val: "99.99%" }
   ],
   interventions: [
     {
-      title: "LiDAR Digital Twins",
-      desc: "Instant 3D mesh generation of mine shafts, identifying structural stress points and unstable rock formations in real-time.",
-      icon: Map
-    },
-    {
-      title: "Ghost-Path Navigation",
-      desc: "AR-guided navigation through complex tunnel networks and heavy coal dust using SLAM and LiDAR fusion, reducing search-time by 60%.",
-      icon: Layers
-    },
-    {
-      title: "Methane Detection Fusion",
-      desc: "Real-time visualization of volatile gas pockets directly on the visor, allowing for proactive evacuation before alarms sound.",
+      title: "IoT Cell Fusion",
+      desc: "Instant visualization of electrolytic cell voltage and temperature data directly on the visor, allowing for immediate corrective action.",
       icon: Activity
+    },
+    {
+      title: "Anode Effect Prediction",
+      desc: "Edge-AI models process sensor data locally to predict and visualize potential anode effects before they occur, reducing energy waste.",
+      icon: Zap
+    },
+    {
+      title: "Peripheral Monitoring",
+      desc: "T-LED peripheral arch displays critical system alerts without obstructing the operator's primary field of view.",
+      icon: Wind
     }
   ]
 };
 
-export default function MiningPage() {
+export default function AluminumPage() {
   return (
     <main className="bg-[#050505] min-h-screen text-[#F8FAFC] antialiased pb-20">
       {/* Subpage Header */}
@@ -71,7 +70,7 @@ export default function MiningPage() {
         
         <div className="relative z-10 max-w-4xl space-y-6">
           <div className="inline-block px-4 py-1 border border-amber-500 text-amber-500 text-[9px] font-bold tracking-[0.4em] uppercase">
-            Sector Briefing // 01
+            Sector Briefing // 03
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase leading-none">
             {SECTOR_DATA.title}
@@ -104,11 +103,11 @@ export default function MiningPage() {
             </p>
             <div className="p-8 rounded-[2rem] bg-white/5 border border-white/10 space-y-6">
               <div className="flex items-center gap-4">
-                <Database className="text-amber-500 w-6 h-6" />
-                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Kernel Node Integration</span>
+                <Cpu className="text-amber-500 w-6 h-6" />
+                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Shielded Kernel Node Integration</span>
               </div>
               <p className="text-zinc-500 text-sm leading-relaxed font-medium italic">
-                "SentinelAR OS has reduced our underground incident rate by 42% through proactive spatial hazard alerts."
+                "SentinelAR OS has significantly improved our ability to monitor potline stability in high-EMF environments where other electronics fail."
               </p>
             </div>
           </div>
@@ -132,7 +131,7 @@ export default function MiningPage() {
       {/* CTA */}
       <section className="py-32 px-8 md:px-20 text-center">
         <div className="max-w-4xl mx-auto space-y-10">
-          <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Ready for <br/> <span className="text-amber-500">Deep-Earth</span> Deployment?</h2>
+          <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Ready for <br/> <span className="text-amber-500">Shielded</span> Deployment?</h2>
           <div className="flex justify-center">
             <button className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
               Initialize Technical Pilot <ChevronRight className="w-5 h-5" />

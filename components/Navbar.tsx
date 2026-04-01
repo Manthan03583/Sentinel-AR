@@ -31,13 +31,13 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-400">
-          <Link href="#vision" className="hover:text-white transition-colors">Vision</Link>
-          <Link href="#tech" className="hover:text-white transition-colors">Technology</Link>
-          <Link href="#verticals" className="hover:text-white transition-colors">Industries</Link>
-          <button className="bg-white text-black px-6 py-2.5 rounded-full font-bold hover:bg-[#FFB000] hover:scale-105 transition-all duration-300">
-            Get Started
-          </button>
+        <div className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-400 font-mono tracking-widest uppercase text-[10px]">
+          <Link href="#tech" className="hover:text-amber-500 transition-colors">Technology</Link>
+          <Link href="#verticals" className="hover:text-amber-500 transition-colors">Industries</Link>
+          <Link href="#contact" className="hover:text-amber-500 transition-colors">Contact</Link>
+          <Link href="#contact" className="bg-white text-black px-6 py-2 rounded-sm font-black hover:bg-amber-500 hover:scale-105 transition-all duration-300 shadow-xl shadow-white/5">
+            Initiate Pilot
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -48,10 +48,12 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`fixed inset-0 bg-black/95 z-[90] flex flex-col items-center justify-center gap-8 transition-all duration-500 ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full pointer-events-none'}`}>
-          <Link href="#vision" onClick={() => setIsOpen(false)} className="text-3xl font-bold">Vision</Link>
-          <Link href="#tech" onClick={() => setIsOpen(false)} className="text-3xl font-bold">Technology</Link>
-          <Link href="#verticals" onClick={() => setIsOpen(false)} className="text-3xl font-bold">Industries</Link>
-          <button className="bg-[#FFB000] text-black px-10 py-4 rounded-full font-bold text-xl">Get Started</button>
+          <Link href="#tech" onClick={() => setIsOpen(false)} className="text-3xl font-black uppercase tracking-tighter text-white">Technology</Link>
+          <Link href="#verticals" onClick={() => setIsOpen(false)} className="text-3xl font-black uppercase tracking-tighter text-white">Industries</Link>
+          <Link href="#contact" onClick={() => setIsOpen(false)} className="text-3xl font-black uppercase tracking-tighter text-white">Contact</Link>
+          <Link href="#contact" onClick={() => setIsOpen(false)} className="mt-4 bg-amber-500 text-black px-10 py-4 rounded-sm font-black text-xl uppercase tracking-widest shadow-2xl shadow-amber-500/20">
+            Initiate Pilot
+          </Link>
       </div>
     </nav>
   );

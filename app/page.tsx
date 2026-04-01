@@ -1,60 +1,30 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
+import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { CoreCapabilities } from "@/components/CoreCapabilities";
-import { BenchmarkIntegrations } from "@/components/BenchmarkIntegrations";
-import { HardSpecs } from "@/components/HardSpecs";
 import { BentoIndustries } from "@/components/BentoIndustries";
-import { TechSection } from "@/components/TechSection";
-import { MissionFootage } from "@/components/MissionFootage";
-import { Gallery } from "@/components/Gallery";
 import { PilotForm } from "@/components/PilotForm";
 import { KeyholeProblem } from "@/components/KeyholeProblem";
-import { SentinelKernel } from "@/components/SentinelKernel";
+import { VisorSimulator } from "@/components/VisorSimulator";
 import { PriceComparison } from "@/components/PriceComparison";
 import { OdishaAdvantage } from "@/components/OdishaAdvantage";
-import { IndustrialScroller } from "@/components/IndustrialScroller";
-import { Architecture } from "@/components/Architecture";
+
+// Dynamically import Three.js components to prevent ChunkLoadErrors and SSR issues
+const Hero = dynamic(() => import("@/components/Hero").then((mod) => mod.Hero), {
+  ssr: false,
+});
+
+const SentinelKernel = dynamic(() => import("@/components/SentinelKernel").then((mod) => mod.SentinelKernel), {
+  ssr: false,
+});
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
-
-const ValueProposition = () => {
-  return (
-    <section className="py-24 bg-[#050505] border-y border-white/5 relative overflow-hidden">
-       <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.5)_1px,transparent_1px)] bg-[background-size:30px_30px]" />
-       
-       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
-          {[
-            { label: "Odisha-Rugged", status: "MONSOON_READY_BUILD", desc: "Labyrinth-design 'Rain Gills' and Gore-Tex™ membranes prevent coal dust and water ingress while allowing heat to vent." },
-            { label: "Thermal Resilience", status: "CLIMATE_ADAPTATION", desc: "Active cooling via a 20mm MagLev fan ensures the NVIDIA core remains stable in 45°C ambient industrial environments." },
-            { label: "Zero-Trust Mesh", status: "SECURE_LOCAL_KERNAL", desc: "Edge processing ensures mission-critical telemetry stays within your private network via LoRaWAN and 5G/Wi-Fi 6 links." }
-          ].map((item, i) => (
-            <div key={i} className="group space-y-6">
-              <div className="items-center gap-4 flex">
-                <div className="text-5xl font-black text-white/10 group-hover:text-amber-500/20 transition-colors duration-500">0{i+1}</div>
-                <div className="h-px flex-1 bg-white/5 group-hover:bg-amber-500/20 transition-all duration-500" />
-                <div className="text-[8px] font-mono text-amber-500/40 uppercase tracking-[0.3em] font-bold">{item.status}</div>
-              </div>
-              <h3 className="text-3xl font-bold text-white uppercase tracking-tighter group-hover:text-amber-500 transition-colors duration-500">{item.label}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed group-hover:text-gray-400 transition-colors duration-500">{item.desc}</p>
-              <div className="flex gap-1 pt-2">
-                {[...Array(3)].map((_, j) => (
-                  <div key={j} className="w-4 h-1 bg-amber-500/10 group-hover:bg-amber-500/40 transition-colors duration-500" style={{ transitionDelay: `${j * 100}ms` }} />
-                ))}
-              </div>
-            </div>
-          ))}
-       </div>
-    </section>
-  );
-};
 
 const Footer = () => {
   return (
@@ -90,6 +60,7 @@ export default function SentinelOS() {
       <Hero />
       <KeyholeProblem />
       <SentinelKernel />
+      <VisorSimulator />
       <BentoIndustries />
       <OdishaAdvantage />
       <PriceComparison />

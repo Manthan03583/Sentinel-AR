@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import { MoveRight, ShieldAlert, Eye, Maximize2 } from "lucide-react";
 
 export const KeyholeProblem = () => {
-  const [isWide, setIsWide] = useState(false);
+  const [isWide, setIsWide] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
   const visorRef = useRef<HTMLDivElement>(null);
 
@@ -39,7 +39,7 @@ export const KeyholeProblem = () => {
   }, [isWide]);
 
   return (
-    <section ref={containerRef} className="py-32 px-6 bg-[#050505] relative border-y border-white/5">
+    <section id="vision" ref={containerRef} className="py-32 px-6 bg-[#050505] relative border-y border-white/5 scroll-mt-24">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
         <div className="space-y-4">
           <div className="flex justify-center items-center gap-3">

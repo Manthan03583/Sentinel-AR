@@ -5,9 +5,9 @@ import { Zap, Battery, ShieldCheck } from "lucide-react";
 
 export const PriceComparison = () => {
   return (
-    <section id="pricing" className="py-32 bg-[#050505] relative overflow-hidden">
+    <section id="pricing" className="py-20 md:py-32 bg-[#050505] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="mb-20 space-y-4 text-center">
+        <div className="mb-12 md:mb-20 space-y-4 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-500/20 rounded-full">
             <span className="w-2 h-2 bg-amber-500 animate-pulse rounded-full" />
             <span className="text-[10px] font-mono text-amber-500 font-bold uppercase tracking-widest">Market Positioning</span>

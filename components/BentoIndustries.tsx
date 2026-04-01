@@ -45,7 +45,7 @@ export const BentoIndustries = () => {
   ];
 
   return (
-    <section id="verticals" className="py-32 bg-[#050505] relative overflow-hidden">
+    <section id="verticals" className="py-32 bg-[#050505] relative overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="space-y-6">
@@ -61,7 +61,7 @@ export const BentoIndustries = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {sites.map((site, i) => (
-            <div key={i} className={`group p-10 rounded-sm bg-white/[0.02] border border-white/5 hover:border-amber-500/30 transition-all duration-700 relative overflow-hidden ${site.span}`}>
+            <div key={i} className={`group p-6 md:p-10 rounded-sm bg-white/[0.02] border border-white/5 hover:border-amber-500/30 transition-all duration-700 relative overflow-hidden ${site.span}`}>
               {/* Field-Cam Filtered Image */}
               <div className="absolute inset-0 z-0">
                 <img 

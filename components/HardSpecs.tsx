@@ -18,55 +18,55 @@ export const HardSpecs = () => {
                 <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
                 <span className="text-[10px] font-bold text-amber-600 uppercase tracking-widest font-mono">Product Dossier: SentinelAR</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-none uppercase">The <br/> <span className="text-amber-500">Monocoque</span> Build.</h2>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-none uppercase">The <br/> <span className="text-amber-500">Sovereign</span> Build.</h2>
               <p className="text-xl text-gray-600 font-medium leading-relaxed">
-                Internalized components within a high-impact Sabic CYCOLOY™ shell. Designed for zero snags and IP67 industrial durability.
+                Internalized components within a high-impact magnesium-polymer shell. Engineered for zero-compromise security and extreme industrial durability.
               </p>
             </div>
             
             <div className="space-y-8">
-              {/* Internal Chassis */}
+              {/* Field FOV & Sensing */}
               <div className="p-8 rounded-3xl bg-zinc-50 border border-zinc-100 group hover:border-amber-500/30 transition-colors">
                 <div className="flex justify-between items-center mb-6">
-                  <h4 className="text-2xl font-black uppercase tracking-tighter">AL6061-T6 Tech-Spine</h4>
-                  <span className="px-3 py-1 bg-zinc-200 text-zinc-600 text-[10px] font-black uppercase rounded-full tracking-widest">Internal Chassis</span>
+                  <h4 className="text-2xl font-black uppercase tracking-tighter">Spatial Awareness</h4>
+                  <span className="px-3 py-1 bg-zinc-200 text-zinc-600 text-[10px] font-black uppercase rounded-full tracking-widest">Optics & Sensors</span>
                 </div>
-                <p className="text-sm text-gray-500 mb-6 font-medium">CNC-machined aluminum frame acting as the primary heatsink and structural mounting point for the sensor fusion layer.</p>
+                <p className="text-sm text-gray-500 mb-6 font-medium">Restoring natural human vision with a 110° peripheral field of view and 360° situational proximity monitoring.</p>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Thermal</div>
-                    <div className="text-sm font-bold">Active MagLev Cooling</div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Vision</div>
+                    <div className="text-sm font-bold">110° Peripheral FOV</div>
                   </div>
                   <div>
-                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Resilience</div>
-                    <div className="text-sm font-bold">45°C Ambient Ready</div>
+                    <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Sensing</div>
+                    <div className="text-sm font-bold">Multi-Spectral (Thermal)</div>
                   </div>
                 </div>
               </div>
 
-              {/* Dual Kernel Processing */}
+              {/* Dual System Core */}
               <div className="p-8 rounded-3xl bg-black text-white shadow-2xl relative overflow-hidden group">
                 <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
                   <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 3v3"/><path d="M11 3v3"/><path d="M15 3v3"/><path d="M3 7h3"/><path d="M3 11h3"/><path d="M3 15h3"/><path d="M7 21v-3"/><path d="M11 21v-3"/><path d="M15 21v-3"/><path d="M21 7h-3"/><path d="M21 11h-3"/><path d="M21 15h-3"/><path d="M11 11h2"/><path d="M11 13h2"/></svg>
                 </div>
                 
                 <div className="flex justify-between items-center mb-6">
-                  <h4 className="text-2xl font-black uppercase tracking-tighter text-amber-500">Dual-Kernel Core</h4>
-                  <span className="px-3 py-1 bg-amber-500 text-black text-[10px] font-black uppercase rounded-full tracking-widest">Orin Nano + S3</span>
+                  <h4 className="text-2xl font-black uppercase tracking-tighter text-amber-500">Sovereign Core</h4>
+                  <span className="px-3 py-1 bg-amber-500 text-black text-[10px] font-black uppercase rounded-full tracking-widest">Secure Compute</span>
                 </div>
                 <div className="space-y-6 relative z-10">
                   <div className="flex gap-4 items-start">
                     <div className="w-1 h-10 bg-amber-500" />
                     <div>
-                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Spatial AI (Primary)</div>
-                      <div className="text-sm font-bold">NVIDIA Jetson Orin Nano</div>
+                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Primary Runtime (Visual)</div>
+                      <div className="text-sm font-bold">High-Performance Sovereign NPU</div>
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
                     <div className="w-1 h-10 bg-zinc-700" />
                     <div>
-                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Safety Fail-Safe (Safety Kernel)</div>
-                      <div className="text-sm font-bold">ESP32-S3 // LoRaWAN SOS</div>
+                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Security Foundation (Safety)</div>
+                      <div className="text-sm font-bold">Isolated Hardware Safety Layer</div>
                     </div>
                   </div>
                 </div>

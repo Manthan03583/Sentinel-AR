@@ -5,46 +5,45 @@ import Link from "next/link";
 import { 
   ArrowLeft, 
   Shield, 
-  Globe, 
+  Thermometer, 
   Activity, 
-  Zap, 
-  Cpu, 
   ChevronRight,
   Database,
+  Flame,
   Layers,
-  Map
+  Zap
 } from "lucide-react";
 
 const SECTOR_DATA = {
-  title: "Mining & Resources",
-  headline: "Sub-Surface Spatial Intelligence.",
-  desc: "Navigating the extreme environments of deep-earth mining requires more than just maps—it requires real-time spatial digital twins. SentinelAR provides operators with 180° visibility through dust, smoke, and total darkness.",
-  img: "https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=2070",
+  title: "Steel & Smelting",
+  headline: "Thermal Resilience at the Edge.",
+  desc: "Operating in 1,500°C environments requires more than just protection—it requires intelligence. SentinelAR provides high-heat blast furnace monitoring and real-time thermal fusion for operators in the heart of the steel cluster.",
+  img: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=2070",
   stats: [
-    { label: "Hazard Detection", val: "< 50ms" },
-    { label: "Depth Rating", val: "3,500m" },
-    { label: "O2 Precision", val: "99.9%" }
+    { label: "Ambient Tolerance", val: "85°C" },
+    { label: "Thermal Refresh", val: "60Hz" },
+    { label: "Core Cooling", val: "MagLev" }
   ],
   interventions: [
     {
-      title: "LiDAR Digital Twins",
-      desc: "Instant 3D mesh generation of mine shafts, identifying structural stress points and unstable rock formations in real-time.",
-      icon: Map
+      title: "Active Thermal Fusion",
+      desc: "Visualizing molten metal flow and temperature gradients directly on the visor, identifying 'cold spots' or structural risks in blast furnaces.",
+      icon: Flame
     },
     {
-      title: "Ghost-Path Navigation",
-      desc: "AR-guided navigation through complex tunnel networks and heavy coal dust using SLAM and LiDAR fusion, reducing search-time by 60%.",
-      icon: Layers
+      title: "Hazard Overlay",
+      desc: "Real-time tracking of high-pressure lines and electrical hazards in high-vibration environments, providing millisecond warning before failure.",
+      icon: Zap
     },
     {
-      title: "Methane Detection Fusion",
-      desc: "Real-time visualization of volatile gas pockets directly on the visor, allowing for proactive evacuation before alarms sound.",
-      icon: Activity
+      title: "Climate-Adapted Cooling",
+      desc: "Active cooling logic maintains sovereign core stability even in 45°C+ ambient Odisha industrial environments.",
+      icon: Thermometer
     }
   ]
 };
 
-export default function MiningPage() {
+export default function SteelPage() {
   return (
     <main className="bg-[#050505] min-h-screen text-[#F8FAFC] antialiased pb-20">
       {/* Subpage Header */}
@@ -71,7 +70,7 @@ export default function MiningPage() {
         
         <div className="relative z-10 max-w-4xl space-y-6">
           <div className="inline-block px-4 py-1 border border-amber-500 text-amber-500 text-[9px] font-bold tracking-[0.4em] uppercase">
-            Sector Briefing // 01
+            Sector Briefing // 02
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase leading-none">
             {SECTOR_DATA.title}
@@ -105,10 +104,10 @@ export default function MiningPage() {
             <div className="p-8 rounded-[2rem] bg-white/5 border border-white/10 space-y-6">
               <div className="flex items-center gap-4">
                 <Database className="text-amber-500 w-6 h-6" />
-                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Kernel Node Integration</span>
+                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Blast Furnace Logic Node</span>
               </div>
               <p className="text-zinc-500 text-sm leading-relaxed font-medium italic">
-                "SentinelAR OS has reduced our underground incident rate by 42% through proactive spatial hazard alerts."
+                "SentinelAR OS has allowed our maintenance crews to perform diagnostics on active blast furnaces without compromising safety."
               </p>
             </div>
           </div>
@@ -132,7 +131,7 @@ export default function MiningPage() {
       {/* CTA */}
       <section className="py-32 px-8 md:px-20 text-center">
         <div className="max-w-4xl mx-auto space-y-10">
-          <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Ready for <br/> <span className="text-amber-500">Deep-Earth</span> Deployment?</h2>
+          <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Ready for <br/> <span className="text-amber-500">High-Heat</span> Deployment?</h2>
           <div className="flex justify-center">
             <button className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
               Initialize Technical Pilot <ChevronRight className="w-5 h-5" />
