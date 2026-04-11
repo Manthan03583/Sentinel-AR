@@ -5,45 +5,46 @@ import Link from "next/link";
 import { 
   ArrowLeft, 
   Shield, 
-  Radar, 
-  Lock, 
+  Rocket, 
+  Zap, 
   ChevronRight,
   Database,
-  Crosshair,
-  Wifi,
-  Eye
+  Cpu,
+  Eye,
+  Activity,
+  Maximize2
 } from "lucide-react";
 
 const SECTOR_DATA = {
-  title: "Defense & Tactical",
-  headline: "Situational Dominance in the Field.",
-  desc: "The modern battlefield is an information-saturated environment. SentinelAR filters the noise, providing operators with encrypted IFF data, thermal sensor fusion, and real-time tactical overlays through a secure peer-to-peer mesh network.",
-  img: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=2070",
+  title: "Phase 3: The Universal Wearable",
+  headline: "Indestructible Spatial Intelligence for Everyone.",
+  desc: "The Atlas V1 architecture is a universal spatial computing engine. We are miniaturizing our industrial-grade safety tech for the $100B+ global consumer market—starting with high-performance motorcycle and action-sports wearables.",
+  img: "https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=2070",
   stats: [
-    { label: "Data Encryption", val: "AES-256" },
-    { label: "Targeting Sync", val: "< 10ms" },
-    { label: "Mesh Range", val: "2.5km" }
+    { label: "Market Potential", val: "$100B+" },
+    { label: "Hardware Weight", val: "< 250g" },
+    { label: "Battery Life", val: "12 Hours" }
   ],
   interventions: [
     {
-      title: "IFF Integrated Overlay",
-      desc: "Instant identification of 'Friend or Foe' assets within the 180° field of view, color-coded and tagged with real-time biometric status.",
-      icon: Crosshair
+      title: "High-Speed HUD",
+      desc: "Real-time navigation and hazard alerts projected directly onto the visor for motorcycle riders and extreme athletes, processed locally with zero latency.",
+      icon: Maximize2
     },
     {
-      title: "Tactical Meshcom",
-      desc: "A secure, peer-to-peer Wi-Fi 6 mesh allows for seamless data and video sharing between units in GPS-denied or shielded environments.",
-      icon: Wifi
+      title: "Air-Gapped Privacy",
+      desc: "Unlike consumer AR, Sentinel OS ensures your spatial data never leaves the device. No cloud logging, no tracking, pure local intelligence.",
+      icon: Shield
     },
     {
-      title: "Thermal/NVG Fusion",
-      desc: "Switch instantly between standard, thermal, and night-vision modes with a single voice command, maintained across the full 180° visor.",
-      icon: Eye
+      title: "Impact-Resistant Build",
+      desc: "Leveraging our industrial magnesium-polymer frames to create the world's most durable consumer wearable, built for the road and the trail.",
+      icon: Zap
     }
   ]
 };
 
-export default function DefensePage() {
+export default function ConsumerPage() {
   return (
     <main className="bg-[#050505] min-h-screen text-[#F8FAFC] antialiased pb-20">
       {/* Subpage Header */}
@@ -70,10 +71,10 @@ export default function DefensePage() {
         
         <div className="relative z-10 max-w-4xl space-y-6">
           <div className="inline-block px-4 py-1 border border-amber-500 text-amber-500 text-[9px] font-bold tracking-[0.4em] uppercase">
-            Sector Briefing // 04
+            Product Roadmap // 2027
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase leading-none">
-            {SECTOR_DATA.title}
+            Universal <br/> <span className="text-amber-500">Wearables.</span>
           </h1>
           <p className="text-xl text-zinc-400 font-medium max-w-2xl leading-relaxed">
             {SECTOR_DATA.headline}
@@ -97,17 +98,17 @@ export default function DefensePage() {
       <section className="py-32 px-8 md:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div className="space-y-12">
-            <h2 className="text-4xl font-bold text-white uppercase tracking-tighter">Mission <br/> <span className="text-amber-500">Readiness.</span></h2>
+            <h2 className="text-4xl font-bold text-white uppercase tracking-tighter">Strategic <br/> <span className="text-amber-500">Expansion.</span></h2>
             <p className="text-zinc-400 text-lg leading-relaxed font-medium">
               {SECTOR_DATA.desc}
             </p>
             <div className="p-8 rounded-[2rem] bg-white/5 border border-white/10 space-y-6">
               <div className="flex items-center gap-4">
-                <Lock className="text-amber-500 w-6 h-6" />
-                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Atlas V1 Secure Node</span>
+                <Rocket className="text-amber-500 w-6 h-6" />
+                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Atlas V1 Miniaturization Active</span>
               </div>
               <p className="text-zinc-500 text-sm leading-relaxed font-medium italic">
-                &quot;Sentinel OS provides our field units with a level of situational awareness that was previously only available in command centers, all processed locally on the Atlas V1.&quot;
+                &quot;We are taking the core safety DNA of the smelter and putting it into every helmet on the road. The Atlas V1 is the engine for the next generation of human vision.&quot;
               </p>
             </div>
           </div>
@@ -131,10 +132,10 @@ export default function DefensePage() {
       {/* CTA */}
       <section className="py-32 px-8 md:px-20 text-center">
         <div className="max-w-4xl mx-auto space-y-10">
-          <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Initialize <br/> <span className="text-amber-500">Tactical Briefing</span> now.</h2>
+          <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Be part of the <br/> <span className="text-amber-500">Sovereign Vision.</span></h2>
           <div className="flex justify-center">
             <Link href="/#contact" className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
-              Request Technical Pilot <ChevronRight className="w-5 h-5" />
+              Join the Alpha Waiting List <ChevronRight className="w-5 h-5" />
             </Link>
           </div>
         </div>

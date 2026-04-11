@@ -104,10 +104,10 @@ export default function AluminumPage() {
             <div className="p-8 rounded-[2rem] bg-white/5 border border-white/10 space-y-6">
               <div className="flex items-center gap-4">
                 <Cpu className="text-amber-500 w-6 h-6" />
-                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Shielded Kernel Node Integration</span>
+                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Shielded Atlas V1 Node</span>
               </div>
               <p className="text-zinc-500 text-sm leading-relaxed font-medium italic">
-                "SentinelAR OS has significantly improved our ability to monitor potline stability in high-EMF environments where other electronics fail."
+                &quot;Sentinel OS has significantly improved our ability to monitor potline stability in high-EMF environments where other electronics fail, thanks to the Atlas V1&apos;s shielded architecture.&quot;
               </p>
             </div>
           </div>
@@ -133,9 +133,9 @@ export default function AluminumPage() {
         <div className="max-w-4xl mx-auto space-y-10">
           <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Ready for <br/> <span className="text-amber-500">Shielded</span> Deployment?</h2>
           <div className="flex justify-center">
-            <button className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
+            <Link href="/#contact" className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
               Initialize Technical Pilot <ChevronRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>

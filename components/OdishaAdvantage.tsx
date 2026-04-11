@@ -4,10 +4,10 @@ import React from "react";
 import { MapPin, Users, Zap, Building2, Landmark, GraduationCap } from "lucide-react";
 
 const PILOTS = [
-  { name: "Mahanadi Coalfields", role: "Sub-Surface Navigation", icon: Landmark },
-  { name: "Tata Steel", role: "Thermal Safety Scans", icon: Building2 },
-  { name: "NALCO", role: "Asset Health Monitoring", icon: Building2 },
-  { name: "DRDO", role: "Tactical Mesh Testing", icon: Zap }
+  { name: "Mahanadi Coalfields", role: "Subsidiary of World's Largest Coal Miner", icon: Landmark },
+  { name: "Tata Steel", role: "Global Steel Leader (30MTPA+)", icon: Building2 },
+  { name: "NALCO", role: "Global Aluminum Major", icon: Building2 },
+  { name: "DRDO / STRATEGIC", role: "Tactical Mesh Testing", icon: Zap }
 ];
 
 export const OdishaAdvantage = () => {
@@ -22,24 +22,24 @@ export const OdishaAdvantage = () => {
           <div className="space-y-8 lg:space-y-12 text-center lg:text-left">
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-500/20 rounded-full">
-                <span className="text-[10px] font-mono text-amber-600 font-bold uppercase tracking-widest">Regional Tech Cluster</span>
+                <span className="text-[10px] font-mono text-amber-600 font-bold uppercase tracking-widest">Industrial Density advantage</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none">The Odisha <br/> <span className="text-amber-500">Advantage.</span></h2>
+              <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none">The Industrial <br/> <span className="text-amber-500">Sandbox.</span></h2>
               <p className="text-gray-600 text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Strategically headquartered in Bhubaneswar to leverage India&apos;s most aggressive industrial policy and world-class research facilities at VARCoE (IIT Bhubaneswar) and O-Hub.
+                SentinelAR is headquartered within the <span className="text-black">Global Metals & Mining corridor</span> to ensure 24/7 field-testing capabilities in the world&apos;s most extreme high-heat and subsurface environments.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 text-left">
                <div className="space-y-3">
                   <GraduationCap className="w-8 h-8 text-amber-500" />
-                  <h4 className="text-xl font-black uppercase tracking-tight">Academic Backbone</h4>
-                  <p className="text-sm text-gray-500 font-medium">Direct access to the Optical Labs at VARCoE for Reflective HUD calibration.</p>
+                  <h4 className="text-xl font-black uppercase tracking-tight">R&D Partnership</h4>
+                  <p className="text-sm text-gray-500 font-medium">Direct collaboration with specialized AR/VR research centers for optics and HUD calibration.</p>
                </div>
                <div className="space-y-3">
                   <Users className="w-8 h-8 text-amber-500" />
-                  <h4 className="text-xl font-black uppercase tracking-tight">O-Hub Incubation</h4>
-                  <p className="text-sm text-gray-500 font-medium">Part of the Startup Odisha ecosystem, ensuring rapid regulatory clearance.</p>
+                  <h4 className="text-xl font-black uppercase tracking-tight">Strategic Grants</h4>
+                  <p className="text-sm text-gray-500 font-medium">Backed by strategic industrial grants to accelerate deployment in high-hazard zones.</p>
                </div>
             </div>
           </div>
@@ -62,13 +62,12 @@ export const OdishaAdvantage = () => {
             </div>
 
             <div className="mt-8 md:mt-12 pt-8 border-t border-zinc-200 space-y-4">
-              <div className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest font-black">Economic Impact_Manifest</div>
-              <div className="text-2xl md:text-3xl font-black text-black">45% <span className="text-amber-500">Lower COGS.</span></div>
-              <p className="text-sm text-gray-500 font-medium leading-relaxed">
-                Utilizing local PCBA assembly and high-volume mobile components to disrupt the $20B industrial AR market.
-              </p>
-            </div>
-          </div>
+               <div className="text-[10px] font-mono text-zinc-400 uppercase tracking-widest font-black">Economic Impact_Manifest</div>
+               <div className="text-2xl md:text-3xl font-black text-black">45% <span className="text-amber-500">Lower COGS.</span></div>
+               <p className="text-sm text-gray-500 font-medium leading-relaxed">
+                 By utilizing <span className="text-black">AI-accelerated hardware design</span> and local PCBA assembly in the Odisha industrial belt, we have eliminated the &quot;Enterprise Tax,&quot; making mission-critical AR affordable for every worker.
+               </p>
+            </div>          </div>
         </div>
       </div>
     </section>

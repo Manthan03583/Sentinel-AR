@@ -65,7 +65,7 @@ const VERTICALS = [
     color: "var(--accent-cyan)",
     size: "col-span-1 md:col-span-2 row-span-1",
     stats: [
-      { label: "Latency", value: "15ms" },
+      { label: "Latency", value: "<15ms" },
       { label: "Support", value: "24/7 Global" }
     ],
     features: ["Bi-Directional Video", "Spatial Annotations"]

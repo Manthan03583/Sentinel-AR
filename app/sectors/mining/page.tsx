@@ -105,10 +105,10 @@ export default function MiningPage() {
             <div className="p-8 rounded-[2rem] bg-white/5 border border-white/10 space-y-6">
               <div className="flex items-center gap-4">
                 <Database className="text-amber-500 w-6 h-6" />
-                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Kernel Node Integration</span>
+                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Atlas V1 Node Integration</span>
               </div>
               <p className="text-zinc-500 text-sm leading-relaxed font-medium italic">
-                "SentinelAR OS has reduced our underground incident rate by 42% through proactive spatial hazard alerts."
+                &quot;Sentinel OS has reduced our underground incident rate by 42% through proactive spatial hazard alerts powered by Atlas V1.&quot;
               </p>
             </div>
           </div>
@@ -134,9 +134,9 @@ export default function MiningPage() {
         <div className="max-w-4xl mx-auto space-y-10">
           <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Ready for <br/> <span className="text-amber-500">Deep-Earth</span> Deployment?</h2>
           <div className="flex justify-center">
-            <button className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
+            <Link href="/#contact" className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
               Initialize Technical Pilot <ChevronRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>

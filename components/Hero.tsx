@@ -74,33 +74,33 @@ export const Hero = () => {
             <div className="hero-text space-y-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/5 border border-amber-500/10 rounded-sm">
                 <span className="w-1.5 h-1.5 bg-amber-500 animate-pulse" />
-                <span className="text-[8px] md:text-[9px] font-mono text-amber-500 font-black uppercase tracking-[0.3em]">Protocol: SentinelAR // Sovereign Intelligence</span>
+                <span className="text-[8px] md:text-[9px] font-mono text-amber-500 font-black uppercase tracking-[0.3em]">Protocol: SentinelAR // Sovereign Spatial Computing</span>
               </div>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] text-white uppercase">
-                Active <br/>
-                <span className="text-amber-500 drop-shadow-[0_0_15px_rgba(255,176,0,0.3)]">Protection</span> <br/>
-                Engineered.
+                The World&apos;s First <br/>
+                <span className="text-amber-500 drop-shadow-[0_0_15px_rgba(255,176,0,0.3)]">Standalone, <br/> Air-Gapped</span> <br/>
+                AR Platform.
               </h1>
             </div>
 
-            <p className="hero-text text-base md:text-lg text-gray-500 max-w-lg font-medium leading-relaxed border-l-2 border-amber-500/20 pl-6">
-              SentinelAR: A mission-critical spatial platform designed for the extreme high-heat and dust reality of the Indian industrial belt. Optimized for Hybrid Edge-Sync and Zero-Trust environments.
+            <p className="hero-text text-base md:text-lg text-gray-400 max-w-lg font-medium leading-relaxed border-l-2 border-amber-500/20 pl-6">
+              From 180°C steel smelters to GPS-denied combat zones. No cloud. No latency. <span className="text-white">Pure Sovereign Intelligence.</span>
             </p>
 
             <div className="hero-text flex flex-col sm:flex-row gap-4 pt-4">
               <Link href="#contact" className="bg-amber-500 text-black px-8 lg:px-12 py-4 lg:py-5 font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-2xl shadow-amber-500/20 active:scale-95 text-center">
                 Initiate Technical Pilot
               </Link>
-              <button className="px-8 lg:px-12 py-4 lg:py-5 border border-white/10 text-white font-black uppercase tracking-widest text-xs hover:bg-white/5 transition-all text-center">
+              <Link href="#tech" className="px-8 lg:px-12 py-4 lg:py-5 border border-white/10 text-white font-black uppercase tracking-widest text-xs hover:bg-white/5 transition-all text-center">
                 Briefing Dossier
-              </button>
+              </Link>
             </div>
 
             <div className="hero-text grid grid-cols-2 sm:grid-cols-3 gap-6 lg:gap-10 pt-12 border-t border-white/5 opacity-60 grayscale hover:grayscale-0 transition-all">
               {[
                 { label: "Core", val: "Sovereign AI", icon: Cpu },
                 { label: "Link", val: "Encrypted Mesh", icon: Zap },
-                { label: "Build", val: "Industrial Alloy", icon: ShieldAlert }
+                { label: "Build", val: "Aerospace-Grade Thermals", icon: ShieldAlert }
               ].map((stat, i) => (
                 <div key={i} className="space-y-1">
                   <div className="text-[8px] font-black text-gray-600 uppercase tracking-widest">{stat.label}</div>
@@ -122,7 +122,7 @@ export const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
                 <div className="absolute top-4 lg:top-6 right-4 lg:right-6 flex flex-col items-end gap-2">
                    <div className="px-3 py-1 bg-amber-500 text-black text-[8px] md:text-[9px] font-black uppercase tracking-widest">SENTINEL-AR-PRO</div>
-                   <div className="px-3 py-1 bg-black/80 border border-white/10 text-amber-500 text-[8px] md:text-[9px] font-mono tracking-widest">SYNC_0.4ms</div>
+                   <div className="px-3 py-1 bg-black/80 border border-white/10 text-amber-500 text-[8px] md:text-[9px] font-mono tracking-widest">SYNC_4.0ms</div>
                 </div>
                 <div className="absolute bottom-4 lg:bottom-6 left-4 lg:left-6 font-mono text-[7px] md:text-[8px] text-zinc-500 space-y-1">
                    <div>[SCAN_VOL_LIDAR]: 34.2m³</div>

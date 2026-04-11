@@ -48,12 +48,12 @@ export const KeyholeProblem = () => {
             <div className="w-8 h-[1px] bg-amber-500" />
           </div>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight uppercase">
-            The <span className="text-amber-500">Keyhole</span> Problem.
+            Solving the <span className="text-amber-500">&quot;Keyhole&quot; Effect</span> in Industrial AR.
           </h2>
           <p className="text-neutral-400 text-lg leading-relaxed max-w-2xl mx-auto font-medium">
             Traditional AR devices offer a limited 30° FOV, creating a dangerous 
             "tunnel vision" effect for industrial workers. SentinelAR eliminates the keyhole with 
-            a <span className="text-amber-500">110° Panoramic Infinity Visor</span> for total situational dominance.
+            a <span className="text-amber-500">110° Panoramic Infinity Visor</span>—powered by our custom optical pipeline on the <span className="text-white">Atlas V1</span>—for total situational dominance.
           </p>
         </div>
 

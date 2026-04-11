@@ -38,7 +38,7 @@ const PILLARS = [
     description: "Real-time telemetry (pressure, temperature, flow rates) is mapped onto physical assets via the visor, enabling 'eyes-on' diagnostics.",
     icon: Activity,
     color: "var(--accent-cyan)",
-    data: "15ms Data Latency"
+    data: "<15ms Data Latency"
   },
   {
     id: "atmospheric",

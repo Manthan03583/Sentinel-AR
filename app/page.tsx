@@ -2,6 +2,7 @@
 
 import React from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -38,15 +39,15 @@ const Footer = () => {
                  </svg>
                </div>
                <span className="font-bold text-xl text-white uppercase tracking-tight">Sentinel<span className="text-amber-500">AR</span></span>
-               <span className="text-[10px] text-gray-600 font-bold uppercase tracking-widest border-l border-gray-800 pl-4">Industrial OS v4.0</span>
+               <span className="text-[10px] text-gray-600 font-bold uppercase tracking-widest border-l border-gray-800 pl-4">Industrial OS v1.0</span>
             </div>
             <p className="text-[10px] text-gray-500 font-mono uppercase tracking-wider">© 2026 Sentinel AR Technologies Pvt. Ltd. All rights reserved.</p>
          </div>
          <div className="flex gap-10 text-xs font-bold text-gray-500 uppercase tracking-widest">
-            <a href="#" className="hover:text-amber-500">Platform</a>
-            <a href="#" className="hover:text-amber-500">Security</a>
-            <a href="#" className="hover:text-amber-500">Partners</a>
-            <a href="#" className="hover:text-amber-500">Legal</a>
+            <Link href="#tech" className="hover:text-amber-500">Platform</Link>
+            <Link href="#vision" className="hover:text-amber-500">Vision</Link>
+            <Link href="#verticals" className="hover:text-amber-500">Industries</Link>
+            <Link href="#contact" className="hover:text-amber-500">Contact</Link>
          </div>
       </div>
     </footer>

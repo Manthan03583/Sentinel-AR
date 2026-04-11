@@ -133,7 +133,7 @@ export const HeroScene = () => {
                 <Cpu className="w-5 h-5 text-[#FFB000]" />
                 <span className="text-xs font-mono text-gray-400">LATENCY</span>
               </div>
-              <div className="text-2xl font-mono font-bold text-white">35ms</div>
+              <div className="text-2xl font-mono font-bold text-white">&lt;10ms</div>
             </div>
 
             <div className="hero-hud backdrop-blur-md bg-white/5 border border-white/10 p-6 w-64">

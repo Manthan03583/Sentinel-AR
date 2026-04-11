@@ -51,22 +51,22 @@ export const HardSpecs = () => {
                 </div>
                 
                 <div className="flex justify-between items-center mb-6">
-                  <h4 className="text-2xl font-black uppercase tracking-tighter text-amber-500">Sovereign Core</h4>
-                  <span className="px-3 py-1 bg-amber-500 text-black text-[10px] font-black uppercase rounded-full tracking-widest">Secure Compute</span>
+                  <h4 className="text-2xl font-black uppercase tracking-tighter text-amber-500">Atlas V1 Engine</h4>
+                  <span className="px-3 py-1 bg-amber-500 text-black text-[10px] font-black uppercase rounded-full tracking-widest">Proprietary PCB</span>
                 </div>
                 <div className="space-y-6 relative z-10">
                   <div className="flex gap-4 items-start">
                     <div className="w-1 h-10 bg-amber-500" />
                     <div>
-                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Primary Runtime (Visual)</div>
-                      <div className="text-sm font-bold">High-Performance Sovereign NPU</div>
+                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Local NPU Inference</div>
+                      <div className="text-sm font-bold">6 TOPs RK3588S Acceleration</div>
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
                     <div className="w-1 h-10 bg-zinc-700" />
                     <div>
-                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Security Foundation (Safety)</div>
-                      <div className="text-sm font-bold">Isolated Hardware Safety Layer</div>
+                      <div className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest mb-1">Compute Architecture</div>
+                      <div className="text-sm font-bold">8-Layer HDI High-Density Interconnect</div>
                     </div>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ export const HardSpecs = () => {
                    <div className="text-[10px] font-mono text-zinc-500 uppercase tracking-[0.3em] font-black">Supply Chain Optimization</div>
                    <div className="text-2xl font-black tracking-tight leading-none uppercase">45% Lower <span className="text-amber-600">TCO.</span></div>
                    <p className="text-sm text-zinc-500 font-medium leading-relaxed">
-                     Sourced via Bangalore/NCR clusters and tested in the Odisha industrial belt for a drastically lower entry barrier compared to global competitors.
+                     By utilizing AI-accelerated hardware design and local PCBA assembly, we have eliminated the &quot;Enterprise Tax,&quot; making mission-critical AR affordable for every worker.
                    </p>
                 </div>
              </div>

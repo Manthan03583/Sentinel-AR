@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#050505] text-[#F8FAFC]">
+    <html lang="en" className="bg-[#050505] text-[#F8FAFC] scroll-smooth">
       <body className={`${inter.className} ${jetbrainsMono.className} bg-background text-foreground antialiased`}>
         <div className="grid-overlay" />
         <div className="scanline" />

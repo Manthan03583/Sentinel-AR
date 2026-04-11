@@ -2,13 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { Factory, Mountain, Wind, ShieldCheck, ChevronRight } from "lucide-react";
+import { Factory, Mountain, Wind, ShieldCheck, ChevronRight, Rocket, Zap } from "lucide-react";
 
 export const BentoIndustries = () => {
   const sites = [
     { 
       title: "Kalinganagar Steel Cluster", 
-      partner: "TATA STEEL",
+      partner: "TATA STEEL (GLOBAL LEADER, 30MTPA+)",
       desc: "Thermal fusion for high-heat blast furnace monitoring. Climate-adapted cooling active at 45°C ambient.", 
       icon: Factory, 
       span: "md:col-span-2",
@@ -17,16 +17,25 @@ export const BentoIndustries = () => {
     },
     { 
       title: "Talcher Coal Fields", 
-      partner: "MCL",
-      desc: "Ghost-path navigation through heavy coal dust and methane-rich zones in GPS-denied subsurface mines.", 
+      partner: "MCL (SUBSIDIARY OF WORLD'S LARGEST COAL MINER)",
+      desc: "Testing ground for subsurface, GPS-denied navigation through methane-rich zones in heavy coal dust.", 
       icon: Mountain, 
       span: "md:col-span-1",
       slug: "mining",
       img: "https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&q=80&w=2070"
     },
     { 
+      title: "Tactical Defense Ops", 
+      partner: "DRDO / STRATEGIC",
+      desc: "Zero-latency 3D spatial awareness for high-stress mission profiles in GPS-shielded environments.", 
+      icon: ShieldCheck, 
+      span: "md:col-span-1",
+      slug: "defense",
+      img: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=2070"
+    },
+    { 
       title: "Angul Aluminum Complex", 
-      partner: "NALCO",
+      partner: "NALCO (GLOBAL ALUMINUM MAJOR)",
       desc: "IoT sync for real-time electrolytic cell diagnostics. T-LED peripheral arch monitoring core vitals.", 
       icon: Wind, 
       span: "md:col-span-1",
@@ -34,13 +43,13 @@ export const BentoIndustries = () => {
       img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070"
     },
     { 
-      title: "Tactical Defense Ops", 
-      partner: "DRDO / STRATEGIC",
-      desc: "Zero-latency 3D spatial awareness for high-stress mission profiles in GPS-shielded environments.", 
-      icon: ShieldCheck, 
-      span: "md:col-span-2",
-      slug: "defense",
-      img: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80&w=2070"
+      title: "Phase 3: The Universal Wearable", 
+      partner: "ROADMAP 2027",
+      desc: "Miniaturizing the Atlas V1 stack for the $100B+ action-sports and motorcycle markets. Air-gapped privacy for everyone.", 
+      icon: Rocket, 
+      span: "md:col-span-1",
+      slug: "consumer",
+      img: "https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=2070"
     },
   ];
 
@@ -52,10 +61,10 @@ export const BentoIndustries = () => {
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 border border-amber-500/20">
               <span className="text-[10px] font-mono text-amber-500 font-black uppercase tracking-[0.4em]">Operational Proving Grounds</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-none uppercase">Field <br/> <span className="text-amber-500">Validation.</span></h2>
+            <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-none uppercase">Scale <br/> <span className="text-amber-500">Validation.</span></h2>
           </div>
           <p className="text-gray-500 max-w-sm font-medium leading-relaxed border-r border-white/5 pr-8 text-right">
-            Surviving the monsoon, dust, and 45°C ambient reality of Odisha's high-hazard industrial belts.
+            From the 45°C ambient reality of Odisha&apos;s high-hazard industrial belts to the global consumer frontier.
           </p>
         </div>
 

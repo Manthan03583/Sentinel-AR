@@ -104,10 +104,10 @@ export default function LogisticsPage() {
             <div className="p-8 rounded-[2rem] bg-white/5 border border-white/10 space-y-6">
               <div className="flex items-center gap-4">
                 <Box className="text-amber-500 w-6 h-6" />
-                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Inventory Mesh Active</span>
+                <span className="font-mono text-xs text-zinc-300 font-bold tracking-widest uppercase">Atlas V1 Logistics Mesh</span>
               </div>
               <p className="text-zinc-500 text-sm leading-relaxed font-medium italic">
-                "We've virtually eliminated forklift-worker collisions while improving our picking efficiency by over 40%."
+                &quot;We&apos;ve virtually eliminated forklift-worker collisions while improving our picking efficiency by over 40% with the Sentinel OS real-time mesh.&quot;
               </p>
             </div>
           </div>
@@ -133,9 +133,9 @@ export default function LogisticsPage() {
         <div className="max-w-4xl mx-auto space-y-10">
           <h2 className="text-4xl md:text-6xl font-black text-white leading-none">Redefine your <br/> <span className="text-amber-500">Logistics Flow</span> today.</h2>
           <div className="flex justify-center">
-            <button className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
+            <Link href="/#contact" className="px-12 py-6 bg-amber-500 text-black font-black uppercase tracking-widest rounded-full hover:bg-white transition-all shadow-xl shadow-amber-500/20 flex items-center gap-4">
               Initialize Technical Pilot <ChevronRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>

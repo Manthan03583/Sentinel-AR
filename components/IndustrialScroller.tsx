@@ -63,7 +63,7 @@ export const IndustrialScroller = () => {
               <div className="flex gap-8">
                  <div className="text-[#FFB000]">
                     <div className="text-xs font-mono text-gray-400 mb-1">LATENCY</div>
-                    <div className="text-xl font-bold font-mono">35ms</div>
+                    <div className="text-xl font-bold font-mono">&lt;10ms</div>
                  </div>
                  <div className="text-[#FFB000]">
                     <div className="text-xs font-mono text-gray-400 mb-1">RESOLUTION</div>

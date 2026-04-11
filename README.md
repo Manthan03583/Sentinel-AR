@@ -1,22 +1,22 @@
-# SentinelAR | Sovereign Spatial Intelligence
+# SentinelAR | Sovereign Spatial Computing
 
 ![SentinelAR Hero](/helmet3.png)
 
-SentinelAR is a high-fidelity, mission-critical spatial computing platform designed for the extreme high-heat, dust, and vibration environments of the Indian industrial belt. We build sovereign hardware and software stacks that eliminate visual overload and prioritize personnel safety in high-hazard zones.
+SentinelAR is a high-fidelity, mission-critical spatial computing platform designed for the extreme high-heat, dust, and vibration environments of the global industrial belt. We build sovereign hardware and software stacks that eliminate visual overload and prioritize personnel safety in high-hazard zones.
 
 ## 🛡️ Core Mission: Visual Silence
 To transform protective equipment from passive gear into active, intelligent systems. Our philosophy of **"Visual Silence"** ensures that mission-critical data remains invisible until a threat is detected, reducing cognitive load and saving lives in steel plants, mines, and tactical environments.
 
 ## 🚀 The Sovereign Stack
 - **Sovereign Security**: Custom hardware and software layers that ensure data remains localized and secure, free from foreign telemetry risks.
-- **Dual-Layer Architecture**: A mathematically secured safety foundation isolated from the visual interface to ensure "Always-On" protection.
-- **Extreme Field-Ready Hardware**: Magnesium-polymer frames with 110° peripheral FOV, 360° proximity monitoring, and multi-spectral (Thermal/NVG) sensing.
+- **Atlas V1 Engine**: Proprietary 8-layer HDI compute engine optimized for local AI inference without cloud dependencies.
+- **Extreme Field-Ready Hardware**: Magnesium-polymer frames with 110° peripheral FOV, 360° proximity monitoring, and aerospace-grade thermals.
 
 ## ✨ Key Features
-- **Sentinel Kernel**: A bespoke spatial operating system designed for zero-latency, local-only inference.
-- **110° Peripheral Vision**: Restoring natural human vision to eliminate the "keyhole" effect of consumer AR.
+- **Sentinel OS**: A hardened, air-gapped Linux stack optimized for the Atlas V1 hardware.
+- **Solving the "Keyhole" Effect**: 110° Panoramic vision powered by a custom optical pipeline.
+- **Eliminating the "Enterprise Tax"**: 45% lower COGS through AI-native design and local PCBA assembly.
 - **360° Proximity Array**: Continuous environmental monitoring for moving machinery and structural threats.
-- **Edge AI & Computer Vision**: Real-time hazard identification processed through a robust Hybrid Architecture (Edge-Sync).
 - **Industrial HUD Aesthetics**: Custom scanlines, grid overlays, and GLITCH-layer animations for a technical "Mission Control" feel.
 
 ## 🛠️ Tech Stack
