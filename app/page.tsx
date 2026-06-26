@@ -41,7 +41,7 @@ const Footer = () => {
                <span className="font-bold text-xl text-white uppercase tracking-tight">Sentinel<span className="text-amber-500">AR</span></span>
                <span className="text-[10px] text-gray-600 font-bold uppercase tracking-widest border-l border-gray-800 pl-4">Industrial OS v1.0</span>
             </div>
-            <p className="text-[10px] text-gray-500 font-mono uppercase tracking-wider">© 2026 Sentinel AR Technologies Pvt. Ltd. All rights reserved.</p>
+            <p className="text-[10px] text-gray-500 font-mono uppercase tracking-wider">© 2026 Garageby Technologies Private Limited. All rights reserved.</p>
          </div>
          <div className="flex gap-10 text-xs font-bold text-gray-500 uppercase tracking-widest">
             <Link href="#tech" className="hover:text-amber-500">Platform</Link>

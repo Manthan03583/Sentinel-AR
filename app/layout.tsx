@@ -7,7 +7,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SentinelAR | Industrial Spatial Intelligence",
-  description: "Advanced AR/Spatial computing for industrial safety by Sentinel AR Technologies Pvt. Ltd.",
+  description: "Advanced AR/Spatial computing for industrial safety by Garageby Technologies Private Limited.",
   icons: {
     icon: "/favicon.svg",
   },

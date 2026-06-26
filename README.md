@@ -33,9 +33,9 @@ To transform protective equipment from passive gear into active, intelligent sys
 - `public/`: High-resolution assets including the "Sovereign Candidate" helmet models.
 
 ## 📞 Contact
-**Sentinel AR Technologies Pvt. Ltd.**
+**Garageby Technologies Private Limited**
 - **Pilot Inquiries**: manthan@sentinelartech.com
 - **Region**: Odisha, India
 
 ---
-© 2026 Sentinel AR Technologies Pvt. Ltd. All rights reserved.
+© 2026 Garageby Technologies Private Limited. All rights reserved.

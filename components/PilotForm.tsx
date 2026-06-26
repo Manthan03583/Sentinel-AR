@@ -30,7 +30,7 @@ export const PilotForm = () => {
               </div>
               <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter leading-none uppercase">Initiate <br/> <span className="text-amber-500">Pilot.</span></h2>
               <p className="text-gray-500 font-medium leading-relaxed max-w-sm">
-                Sentinel AR Technologies Pvt. Ltd. is selecting 10 industrial partners for the SentinelAR field-readiness phase. Qualified partners receive full hardware provisioning and on-site integration support.
+                Garageby Technologies Private Limited is selecting 10 industrial partners for the SentinelAR field-readiness phase. Qualified partners receive full hardware provisioning and on-site integration support.
               </p>
             </div>
             
