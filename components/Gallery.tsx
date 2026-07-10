@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export const Gallery = () => {
   const milestones = [
@@ -30,16 +31,17 @@ export const Gallery = () => {
             <div key={i} className="group relative bg-white/[0.03] border border-white/10 p-2 overflow-hidden hover:border-amber-500/40 transition-all duration-500">
               <div className="aspect-square relative overflow-hidden bg-black">
                 {/* Default Color Image */}
-                <img 
+                <Image 
                   src={item.src} 
                   alt={item.title} 
-                  className="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-700 ease-out"
+                  fill
+                  className="object-contain p-8 group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 
                 {/* Technical X-Ray Overlay on Hover */}
                 <div className="absolute inset-0 bg-amber-500 opacity-0 group-hover:opacity-100 mix-blend-color transition-opacity duration-500 pointer-events-none" />
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-20 x-ray-filter transition-opacity duration-500 pointer-events-none">
-                   <img src={item.src} className="w-full h-full object-contain p-8 scale-110" alt="x-ray" />
+                   <Image src={item.src} fill className="object-contain p-8 scale-110" alt="x-ray" />
                 </div>
 
                 {/* Engineering Data Overlay */}

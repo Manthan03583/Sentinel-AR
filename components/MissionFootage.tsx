@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Play, Maximize2, Radio } from "lucide-react";
 
 const FEEDS = [
@@ -49,10 +50,11 @@ export const MissionFootage = () => {
            {FEEDS.map((feed, i) => (
               <div key={i} className="group relative aspect-square bg-zinc-900 border border-white/10 rounded-xl overflow-hidden hover:border-amber-500/50 transition-all duration-500">
                  {/* Video Feed Image */}
-                 <img 
+                 <Image 
                    src={feed.img} 
                    alt={feed.id} 
-                   className="w-full h-full object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700"
+                   fill
+                   className="object-cover grayscale opacity-50 group-hover:opacity-80 group-hover:grayscale-0 transition-all duration-700"
                  />
                  
                  {/* Scanline Overlay */}

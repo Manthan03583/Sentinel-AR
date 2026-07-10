@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -108,7 +109,7 @@ export const ExplodedSchematic = () => {
           <div className="schematic-core w-96 h-96 rounded-full border border-white/5 flex items-center justify-center relative">
              <div className="absolute inset-0 border border-dashed border-white/10 rounded-full animate-[spin_60s_linear_infinite]" />
              <div className="w-64 h-64 bg-white/[0.02] rounded-full backdrop-blur-sm border border-white/10 flex items-center justify-center">
-                <img src="/helmet3.png" className="w-full h-full object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-500" alt="Core Unit" />
+                <Image src="/helmet3.png" width={500} height={500} className="w-full h-full object-contain opacity-50 grayscale hover:grayscale-0 transition-all duration-500" alt="Core Unit" />
              </div>
           </div>
 

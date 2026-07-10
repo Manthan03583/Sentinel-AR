@@ -19,7 +19,7 @@ const SECTOR_DATA = {
   title: "Phase 3: The Universal Wearable",
   headline: "Indestructible Spatial Intelligence for Everyone.",
   desc: "The Atlas V1 architecture is a universal spatial computing engine. We are miniaturizing our industrial-grade safety tech for the $100B+ global consumer market—starting with high-performance motorcycle and action-sports wearables.",
-  img: "https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=2070",
+  img: "/helmet5.png",
   stats: [
     { label: "Market Potential", val: "$100B+" },
     { label: "Hardware Weight", val: "< 250g" },

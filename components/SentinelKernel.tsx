@@ -39,11 +39,39 @@ const features = [
   },
 ];
 
+const KernelTerminalLogs = ({ isCrashed }: { isCrashed: boolean }) => {
+  const [logs, setLogs] = useState<string[]>([]);
+  const [logIndex, setLogIndex] = useState(0);
+
+  useEffect(() => {
+    const logInterval = setInterval(() => {
+      if (!isCrashed) {
+        setLogs(prev => [KERNEL_LOGS[logIndex], ...prev].slice(0, 5));
+        setLogIndex(prev => (prev + 1) % KERNEL_LOGS.length);
+      }
+    }, 1500);
+
+    return () => clearInterval(logInterval);
+  }, [isCrashed, logIndex]);
+
+  return (
+    <div className="h-20 md:h-24 w-48 md:w-64 mx-auto overflow-hidden text-left font-mono text-[7px] md:text-[8px] space-y-1 bg-white/[0.02] p-3 md:p-4 border border-white/5 rounded-lg">
+       <div className="flex items-center gap-2 mb-2 text-zinc-500 border-b border-white/5 pb-1">
+          <Terminal className="w-2 h-2" />
+          <span>HARDENED_BOOT_STREAM</span>
+       </div>
+       {logs.map((log, i) => (
+          <div key={i} className={`truncate ${i === 0 ? 'text-amber-500' : 'text-zinc-600'}`}>
+             {">"} {log}
+          </div>
+       ))}
+    </div>
+  );
+};
+
 export const SentinelKernel = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isCrashed, setIsCrashed] = useState(false);
-  const [logs, setLogs] = useState<string[]>([]);
-  const [logIndex, setLogIndex] = useState(0);
 
   useGSAP(() => {
     gsap.from(".feature-row", {
@@ -66,18 +94,10 @@ export const SentinelKernel = () => {
       setIsCrashed(prev => !prev);
     }, 8000);
 
-    const logInterval = setInterval(() => {
-      if (!isCrashed) {
-        setLogs(prev => [KERNEL_LOGS[logIndex], ...prev].slice(0, 5));
-        setLogIndex(prev => (prev + 1) % KERNEL_LOGS.length);
-      }
-    }, 1500);
-
     return () => {
       clearInterval(crashInterval);
-      clearInterval(logInterval);
     };
-  }, [isCrashed, logIndex]);
+  }, []);
 
   return (
     <section id="tech" ref={containerRef} className="py-32 bg-[#080808] border-y border-white/5 text-white relative overflow-hidden scroll-mt-24">
@@ -138,17 +158,7 @@ export const SentinelKernel = () => {
               <div className="absolute inset-2 border border-dotted border-cyan-500/20 rounded-full animate-[spin_15s_linear_reverse_infinite]" />
             </div>
             
-            <div className="h-20 md:h-24 w-48 md:w-64 mx-auto overflow-hidden text-left font-mono text-[7px] md:text-[8px] space-y-1 bg-white/[0.02] p-3 md:p-4 border border-white/5 rounded-lg">
-               <div className="flex items-center gap-2 mb-2 text-zinc-500 border-b border-white/5 pb-1">
-                  <Terminal className="w-2 h-2" />
-                  <span>HARDENED_BOOT_STREAM</span>
-               </div>
-               {logs.map((log, i) => (
-                  <div key={i} className={`truncate ${i === 0 ? 'text-amber-500' : 'text-zinc-600'}`}>
-                     {">"} {log}
-                  </div>
-               ))}
-            </div>
+            <KernelTerminalLogs isCrashed={isCrashed} />
           </div>
 
           <div className={`absolute inset-0 z-20 flex flex-col items-center justify-center transition-opacity duration-300 p-4 text-center ${isCrashed ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>

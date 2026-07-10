@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Factory, Mountain, Wind, ShieldCheck, ChevronRight, Rocket, Zap } from "lucide-react";
 
 export const BentoIndustries = () => {
@@ -49,7 +50,7 @@ export const BentoIndustries = () => {
       icon: Rocket, 
       span: "md:col-span-1",
       slug: "consumer",
-      img: "https://images.unsplash.com/photo-1558981403-c5f91cbba527?auto=format&fit=crop&q=80&w=2070"
+      img: "/helmet5.png"
     },
   ];
 
@@ -70,13 +71,14 @@ export const BentoIndustries = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {sites.map((site, i) => (
-            <div key={i} className={`group p-6 md:p-10 rounded-sm bg-white/[0.02] border border-white/5 hover:border-amber-500/30 transition-all duration-700 relative overflow-hidden ${site.span}`}>
+            <article key={i} className={`group p-6 md:p-10 rounded-sm bg-white/[0.02] border border-white/5 hover:border-amber-500/30 transition-all duration-700 relative overflow-hidden ${site.span}`}>
               {/* Field-Cam Filtered Image */}
               <div className="absolute inset-0 z-0">
-                <img 
+                <Image 
                   src={site.img} 
                   alt={site.title} 
-                  className="w-full h-full object-cover grayscale opacity-15 contrast-125 group-hover:opacity-30 group-hover:scale-105 transition-all duration-1000" 
+                  fill
+                  className="object-cover grayscale opacity-15 contrast-125 group-hover:opacity-30 group-hover:scale-105 transition-all duration-1000" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/95 to-transparent" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(5,5,5,0.8)_100%)]" />
@@ -107,7 +109,7 @@ export const BentoIndustries = () => {
 
               {/* HUD scanlines */}
               <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.05] pointer-events-none bg-[linear-gradient(rgba(255,176,0,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,176,0,0.5)_1px,transparent_1px)] bg-[background-size:20px_20px]" />
-            </div>
+            </article>
           ))}
         </div>
       </div>

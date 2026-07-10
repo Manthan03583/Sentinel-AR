@@ -2,6 +2,7 @@
 
 import React, { useRef, Suspense } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { 
   OrbitControls, 
@@ -114,9 +115,12 @@ export const Hero = () => {
 
           <div className="hero-visual relative order-2 lg:order-2 px-4 md:px-0">
              <div className="relative group overflow-hidden bg-white/[0.02] border border-white/5 p-4 rounded-3xl backdrop-blur-sm shadow-2xl">
-                <img 
+                <Image 
                   src="/helmet3.png" 
-                  alt="SentinelAR Final Production Candidate" 
+                  alt="SentinelAR Final Production Candidate"
+                  width={500}
+                  height={500}
+                  priority
                   className="w-full h-auto drop-shadow-[0_0_50px_rgba(255,176,0,0.1)] grayscale-[0.2] hover:grayscale-0 transition-all duration-700 max-w-[500px] mx-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />

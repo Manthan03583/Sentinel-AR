@@ -4,10 +4,10 @@ import React from "react";
 import { MapPin, Users, Zap, Building2, Landmark, GraduationCap } from "lucide-react";
 
 const PILOTS = [
-  { name: "Mahanadi Coalfields", role: "Subsidiary of World's Largest Coal Miner", icon: Landmark },
-  { name: "Tata Steel", role: "Global Steel Leader (30MTPA+)", icon: Building2 },
-  { name: "NALCO", role: "Global Aluminum Major", icon: Building2 },
-  { name: "DRDO / STRATEGIC", role: "Tactical Mesh Testing", icon: Zap }
+  { name: "Mahanadi Coalfields", role: "Built to the standards of World's Largest Coal Miner", icon: Landmark },
+  { name: "Tata Steel", role: "Designed for Global Steel (30MTPA+) Standards", icon: Building2 },
+  { name: "NALCO", role: "Target Theater: Global Aluminum Major", icon: Building2 },
+  { name: "DRDO / STRATEGIC", role: "Target Theater: Secure HAL Aircraft Inspection & iDEX", icon: Zap }
 ];
 
 export const OdishaAdvantage = () => {
@@ -45,7 +45,7 @@ export const OdishaAdvantage = () => {
           </div>
 
           <div className="bg-zinc-50 border border-zinc-100 p-8 md:p-12 rounded-[2rem] md:rounded-[2.5rem] relative overflow-hidden group">
-            <div className="absolute top-0 right-0 bg-amber-500 text-black px-4 md:px-6 py-2 text-[8px] md:text-[10px] font-black uppercase tracking-widest">Active Pilot Ecosystem</div>
+            <div className="absolute top-0 right-0 bg-amber-500 text-black px-4 md:px-6 py-2 text-[8px] md:text-[10px] font-black uppercase tracking-widest">Strategic Deployment Pipeline</div>
             
             <div className="space-y-6 md:space-y-8 relative z-10">
               {PILOTS.map((pilot, i) => (

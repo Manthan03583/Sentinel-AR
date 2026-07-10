@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import { Eye, Flame, Activity, Waves, Crosshair, Scan, Zap, AlertTriangle, Radio, Target, ShieldCheck } from "lucide-react";
 import gsap from "gsap";
 
@@ -22,20 +23,20 @@ const MODES = [
     desc: "Long-wave infrared (LWIR) overlay for identifying heat leaks and equipment stress."
   },
   { 
-    id: "lidar", 
-    label: "LiDAR_Mesh", 
-    icon: Scan, 
+    id: "defect", 
+    label: "Defect_Inference", 
+    icon: Target, 
     color: "text-cyan-400",
     accent: "#22d3ee",
-    desc: "Real-time SLAM mapping for structural integrity and volume analysis."
+    desc: "Offline neural network inference for sub-millimeter defects in EV battery lines and aircraft fuselages."
   },
   { 
-    id: "gas", 
-    label: "Gas_Spec", 
-    icon: Waves, 
+    id: "airgap", 
+    label: "Airgap_Telemetry", 
+    icon: Radio, 
     color: "text-green-400",
     accent: "#4ade80",
-    desc: "Hyperspectral imaging for methane (CH4) and volatile compound detection."
+    desc: "Defense-grade secure intranet operations (LAN/WAN). Zero public cloud leakage."
   }
 ];
 
@@ -88,6 +89,7 @@ export const VisorSimulator = () => {
             {MODES.map((mode) => (
               <button
                 key={mode.id}
+                aria-label={`Switch to ${mode.label}`}
                 onClick={() => setActiveMode(mode.id)}
                 className={`px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all duration-500 flex items-center gap-3 ${
                   activeMode === mode.id 
@@ -109,13 +111,14 @@ export const VisorSimulator = () => {
         >
           {/* Base Image Layer */}
           <div className="absolute inset-0 transition-all duration-1000 ease-in-out">
-             <img 
+             <Image 
                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=2070" 
                alt="Industrial Environment" 
-               className={`w-full h-full object-cover transition-all duration-1000 ${
+               fill
+               className={`object-cover transition-all duration-1000 ${
                  activeMode === 'thermal' ? 'brightness-50 contrast-150 saturate-0' :
-                 activeMode === 'lidar' ? 'grayscale brightness-[0.3] contrast-125' :
-                 activeMode === 'gas' ? 'sepia hue-rotate-[140deg] brightness-50 contrast-125' :
+                 activeMode === 'defect' ? 'grayscale brightness-[0.3] contrast-125' :
+                 activeMode === 'airgap' ? 'sepia hue-rotate-[140deg] brightness-50 contrast-125' :
                  'brightness-90'
                }`}
              />
@@ -127,7 +130,7 @@ export const VisorSimulator = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,transparent_20%,rgba(0,0,0,0.4)_100%)]" />
           </div>
 
-          <div className={`absolute inset-0 pointer-events-none transition-opacity duration-700 ${activeMode === 'lidar' ? 'opacity-100' : 'opacity-0'}`}>
+          <div className={`absolute inset-0 pointer-events-none transition-opacity duration-700 ${activeMode === 'defect' ? 'opacity-100' : 'opacity-0'}`}>
             <div className="absolute inset-0 bg-[linear-gradient(rgba(34,211,238,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(34,211,238,0.1)_1px,transparent_1px)] bg-[size:32px_32px]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(34,211,238,0.05)_0%,transparent_70%)]" />
           </div>
@@ -180,23 +183,23 @@ export const VisorSimulator = () => {
             </div>
 
             {/* Floating Data Nodes */}
-            <div className={`absolute top-1/4 right-1/4 transition-all duration-700 ${activeMode === 'lidar' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+            <div className={`absolute top-1/4 right-1/4 transition-all duration-700 ${activeMode === 'defect' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
               <div className="bg-cyan-500/10 backdrop-blur-md border border-cyan-500/30 p-4 rounded-xl space-y-2">
                 <div className="flex items-center gap-2">
                   <Target className="w-4 h-4 text-cyan-400" />
-                  <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest">Structural_Anomalies</span>
+                  <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-widest">Defect_Inference</span>
                 </div>
-                <div className="text-[9px] text-cyan-200/60 leading-tight">NODE_772: MICROFRACTURE_DETECTED<br/>PROBABILITY: 0.82%</div>
+                <div className="text-[9px] text-cyan-200/60 leading-tight">EV_BATTERY_CELL_04: MICROFRACTURE<br/>CONFIDENCE: 99.82%</div>
               </div>
             </div>
 
-            <div className={`absolute bottom-1/3 left-1/4 transition-all duration-700 ${activeMode === 'gas' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`absolute bottom-1/3 left-1/4 transition-all duration-700 ${activeMode === 'airgap' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="bg-green-500/10 backdrop-blur-md border border-green-500/30 p-4 rounded-xl space-y-2">
                 <div className="flex items-center gap-2">
-                  <AlertTriangle className="w-4 h-4 text-green-400 animate-pulse" />
-                  <span className="text-[10px] font-bold text-green-400 uppercase tracking-widest">CH4_CONCENTRATION</span>
+                  <ShieldCheck className="w-4 h-4 text-green-400 animate-pulse" />
+                  <span className="text-[10px] font-bold text-green-400 uppercase tracking-widest">SECURE_INTRANET</span>
                 </div>
-                <div className="text-2xl font-black text-white font-mono">1.22 <span className="text-[10px] text-green-400">PPM</span></div>
+                <div className="text-2xl font-black text-white font-mono">LAN <span className="text-[10px] text-green-400">ONLY</span></div>
               </div>
             </div>
 

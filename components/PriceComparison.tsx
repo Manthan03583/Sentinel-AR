@@ -14,29 +14,29 @@ export const PriceComparison = () => {
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">Industrial Tech. <br/> <span className="text-amber-500">Democratized.</span></h2>
           <p className="text-gray-500 max-w-2xl mx-auto font-medium pt-4 leading-relaxed">
-            Legacy enterprise AR solutions are priced as luxury tools for a few. SentinelAR is engineered for mass deployment across your entire industrial workforce.
+            Legacy enterprise AR solutions are priced as luxury tools for a few. SentinelAR uses frugal engineering to deploy edge-compute spatial intelligence across your entire industrial workforce.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
            {[
              { 
-               label: "Target ROI", 
-               val: "Mass Deployment", 
+               label: "System Security", 
+               val: "Zero Cloud Leakage", 
                icon: ShieldCheck, 
-               desc: "Optimized for a 75% lower Total Cost of Ownership (TCO) compared to standard enterprise headsets." 
+               desc: "Built for iDEX and defense intranets. Operates entirely offline on local silicon, requiring zero cloud connectivity." 
              },
              { 
-               label: "Supply Chain", 
-               val: "Local Sourcing", 
+               label: "Core Technology", 
+               val: "Indigenous Hardware", 
                icon: Zap, 
-               desc: "Leveraging the Odisha industrial ecosystem and high-volume hardware to eliminate import-heavy cost barriers." 
+               desc: "Leveraging frugal engineering and an indigenous hardware architecture to eliminate import-heavy cost barriers." 
              },
              { 
-               label: "Pilot Integration", 
-               val: "Phase-0 Access", 
+               label: "Inspection Array", 
+               val: "Edge-Compute Vision", 
                icon: Battery, 
-               desc: "Priority hardware allocation for strategic partners during the field-readiness and prototyping phase." 
+               desc: "Edge-compute machine vision inspection arrays designed for MSME EV Quality Assurance and HAL aircraft inspection." 
              }
            ].map((stat, i) => (
              <div key={i} className={`p-8 rounded-3xl bg-white/[0.02] border border-white/5 space-y-4 ${i === 0 ? 'border-amber-500/30 bg-amber-500/[0.02]' : ''}`}>
